@@ -3,21 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин готовых шаблонов Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <a href="/"><img src="img/nerdsLogo.svg" alt="Логотип Нёрдс" width="160" height="65"</a>
+<header class="header">
+  <div class="container header-wrpapper">
+  <a class="logo" href="/"><img src="img/nerdsLogo.svg" alt="Логотип Нёрдс" width="160" height="65"></a>
   <nav class="main-nav">
     <ul class="nav-list">
       <li class="nav-item"><a href="#">Студия</a></li>
-      <li class="nav-item"><a href="#"></a>Клиенты</li>
-      <li class="nav-item"aria-label="/shop.html">Магазин</li>
-      <li class="nav-item"><a href="#"></a>Контакты</li>
+      <li class="nav-item"><a href="#">Клиенты</a></li>
+      <li class="nav-item"><a href="/shop.html">Магазин</a></li>
+      <li class="nav-item"><a href="#">Контакты</a></li>
     </ul>
   </nav>
   <a href="#" class="cart">Корзина</a>
+  </div>
 </header>
 <main>
+  <div class="container">
   <h1 class="title">Магазин готовых шаблонов</h1>
   <aside class="filter">
     <h2 class="visually-hidden">Фильтр</h2>
@@ -46,7 +52,7 @@
         <label for="slider">Слайдер</label>
 
         <input type="checkbox" id="features-block">
-        <label for="features-blocl">Блок преимуществ</label>
+        <label for="features-block">Блок преимуществ</label>
 
         <input type="checkbox" id="news"  checked>
         <label for="news">Новости</label>
@@ -90,7 +96,7 @@
       </li>
       <li class="product-item">
         <a href="#">
-          <img src="/img/imgMishkaJpg.jpgg" alt="" width="360" height="576">
+          <img src="/img/imgMishkaJpg.jpg" alt="" width="360" height="576">
         </a>
       </li>
       <li class="product-item">
@@ -104,9 +110,8 @@
         </a>
       </li>
     </ul>
-
   </section>
-
+  </div>
   <section class="contacts">
     <div class="map">
      <iframe src="https://yandex.ru/map-widget/v1/-/CKaoaXjf" width="100%" height="430"></iframe>
@@ -118,14 +123,16 @@
       <a href="/feedback.html" class="feedback-button btn">Напишите нам</a>
     </div>
   </section>
-  <ul class="pagination-list">
-    <li class="pagination-item disabled">1</li>
-    <li class="pagination-item">2</li>
-    <li class="pagination-item">3</li>
-    <li class="pagination-item next">Следующая</li>
-  </ul>
+  <div class="container">
+    <ul class="pagination-list">
+      <li class="pagination-item disabled">1</li>
+      <li class="pagination-item">2</li>
+      <li class="pagination-item">3</li>
+      <li class="pagination-item next">Следующая</li>
+    </ul>
+  </div>
 </main>
-<footer>
+<footer class="container">
   <h2 class="title">Давайте дружить, это выгодно!</h2>
   <p>Скидка 10% для друзей из социальных сетей.</p>
   <ul class="socials-list">
