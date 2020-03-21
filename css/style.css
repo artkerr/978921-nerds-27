@@ -4,6 +4,8 @@ body {
   line-height: 24px;
   color: #000;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 html {
   box-sizing: border-box;
@@ -439,7 +441,7 @@ textarea{
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 textarea::placeholder {
-  color: rgba (68, 68, 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
 }
 input[type="email"]:invalid {
   border-color: #e74246;
@@ -569,7 +571,7 @@ input[type="email"]:invalid {
   color: #000;
 }
 .product {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .product-list {
   display: flex;
@@ -601,6 +603,84 @@ input[type="email"]:invalid {
   height: 50px;
   color: #000;
 }
+.range-filter {
+  width: 260px;
+
+}
+.range-controls {
+  position: relative;
+  height: 81px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 10px solid #ffffff;
+  background-color: #000000;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 17px;
+}
+
+.range-controls .toggle-max {
+  left: 170px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 80px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
