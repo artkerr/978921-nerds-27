@@ -12,6 +12,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+
 }
 a {
   text-decoration: none;
@@ -53,7 +54,6 @@ li {
 .header {
   height: 132px;
   background-color: #eeeeee;
-
 }
 .header-wrpapper {
   display: flex;
@@ -95,7 +95,14 @@ li {
   color:rgba(0, 0, 0, 0.3);
 }
 .active {
-  width: 74px;
+  position: relative;
+}
+.active:after {
+  content: "";
+  top: 32px;
+  left: 0;
+  position: absolute;
+  width: 100%;
   height: 2px;
   background-color: #fb565a;
 }
@@ -516,4 +523,128 @@ input[type="email"]:invalid {
 .footer-tagline p {
   color: #444444;
 }
+.title-wrapper {
+  width: 100%;
+  height: 210px;
+  background-color: #eeeeee;
+}
+.title-wrapper .title{
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+}
+.body-wrapper {
+  display: flex;
+  padding-top: 50px;
+}
+.filter {
+  width: 261px;
+  margin-right: 50px;
+}
+.product {
+  width: 1096px;
+}
+.sort  {
+  display: flex;
+  justify-content: space-between;
+}
+.sort .title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.sort-list {
+  display: flex;
+}
+.sort-item {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.sort-item a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+.product {
+  margin-left: 50px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
 
+}
+.product-item {
+  margin-right: 40px;
+}
+.product-item:nth-child(2n) {
+  margin-right: 0;
+}
+.filter-field {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.filter-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  padding-bottom: 50px;
+}
+.filter-btn {
+  width: 260px;
+  height: 50px;
+  color: #000;
+}
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 40px;
+}
+.pagination-item {
+  display: block;
+  padding: 15px 21px;
+  border: 3px solid  #eee;
+  background-color: #eeeeee;
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.pagination-item:hover {
+  background-color: #dfdfdf;
+  border-color:  #dfdfdf;
+}
+.pagination-item:active {
+  background-color: #d5d5d5;
+  border-color:  #d5d5d5;
+}
+
+.pagination-item a {
+  color: #000000;
+}
+.pagination-item:active a {
+  color: rgba(0, 0, 0, 0.3);;
+}
+.disabled {
+  background-color: #fff;
+  cursor: default;
+}
+.disabled,
+.disabled:hover {
+  background-color: #fff;
+  border-color:  #eee;
+  cursor: default;
+}
+
+
+.next  {
+  text-transform: uppercase;
+  padding: 15px 65px;
+}
