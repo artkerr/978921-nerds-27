@@ -133,16 +133,17 @@ li {
 
 .slider {
   width: 100%;
+  height: 430px;
   position: relative;
   background-color: #eeeeee;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 80px;
+
 }
 
 .slider-list {
   height: 410px;
   list-style: none;
-  margin-top: -30px;
+  margin-top: -31px;
 }
 .slider-item{
  display: flex;
@@ -296,12 +297,17 @@ li {
 .services-item .title {
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 30px;
+  margin-top: 15px;
 
 }
 .services-text {
+  width: 245`px;
   line-height: 24px;
+  color: #283136;
+  margin-top: -5px;
+  padding-bottom: 15px;
 }
 .red-btn {
   width: 160px;
@@ -340,23 +346,28 @@ li {
 .information {
   display: flex;
   margin-top: 90px;
+
 }
 .information-main {
-  width: 647px;
+  width: 700px;
   margin-right: 80px;
 }
 .information-main .title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  width: 647px;
+  width: 650px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
 }
 .information-text {
-  width: 614px;
+  max-width: 614px;
+  color: #283136;
+  line-height: 24px;
+  padding-bottom: 25px;
 }
 .info-list-title {
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 24px;
   font-weight: bold;
@@ -367,6 +378,9 @@ li {
 }
 .info-item {
   padding-top: 10px;
+  padding-bottom: 15px;
+  color: #283136;
+
 }
 .info-item:before {
   content: "";
@@ -379,9 +393,19 @@ li {
 
 
 }
+
+.infographics-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: bold;
+
+
+}
 .infographics {
   position: relative;
   padding-top: 200px;
+  margin-left: 30px;
 
 }
 .infographics:after {
@@ -390,30 +414,37 @@ li {
   height: 208px;
   background: url("../img/nerdsPicture.jpg") no-repeat;
   position: absolute;
-  top: 10px;
-  right: -40px;
+  top: -30px;
+  right: -20px;
 
 }
 .infographics-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 0;
+
+  margin-top: 50px;
 }
 .infographics-items {
   position: relative;
   width: 90px;
   line-height: 18px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.infographics-items:nth-child(3n) {
+  margin-right: 0;
 }
 .big-num {
   font-size: 45px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 10px;
 }
 .percent {
   position: absolute;
   top: -10px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 30px;
 }
 
@@ -422,13 +453,17 @@ li {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 95px;
   margin-bottom: 70px;
+  padding-left: 30px;
+  padding-right: 40px;
 }
 .works-list:before{
   content: "";
   position: absolute;
-  top: -60px;
+  top: -57px;
   width: 1160px;
   height: 2px;
   background-color: #eee;
@@ -436,7 +471,7 @@ li {
 .works-list:after {
   content: "";
   position: absolute;
-  top: 135px;
+  top: 128px;
   width: 1160px;
   height: 2px;
   background-color: #eee;
@@ -444,7 +479,19 @@ li {
 .works-items {
   opacity: 0.2;
   cursor: pointer;
+  position: relative;
 }
+.works-items:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  opacity: 1;
+  width: 2px;
+  height: 52px;
+  background-color: black;
+}
+
 .works-items:hover {
   opacity: 1;
 }
@@ -459,15 +506,16 @@ li {
   width: 319px;
   height: 308px;
   position: absolute;
-  top: -380px;
-  left: 10px;
+  top: -370px;
   background-color: #fff;
-  padding: 50px;
+  padding: 30px 50px;
 }
 .adress .title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
+  text-transform: uppercase;
   line-height: 30px;
+  padding-bottom: 10px;
 }
 .adress p,
 [href^=tel]{
@@ -590,6 +638,7 @@ input[type="email"]:invalid {
 }
 .socials-list {
   display: flex;
+  padding: 0;
 
 }
 .socials-item{
@@ -603,7 +652,7 @@ input[type="email"]:invalid {
   height: 78px;
   background-color: #eee;
   border-radius: 50%;
-
+  margin-top: 40px;
 }
 .social-button:hover {
   background-color: #e74246;
@@ -615,14 +664,18 @@ input[type="email"]:invalid {
   opacity: 0.3;
 }
 .footer-tagline {
-  margin-left: 100px;
+  margin-left: 120px;
+  margin-top: 40px;
 }
 .footer-tagline .title {
   font-size: 36px;
   font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 .footer-tagline p {
   color: #444444;
+  padding: 0;
 }
 .title-wrapper {
   width: 100%;
