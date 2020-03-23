@@ -439,13 +439,12 @@ li {
   height: 2px;
   background-color: #eee;
 }
-.partner-items {
+.partner-items{
   opacity: 0.2;
   cursor: pointer;
   position: relative;
 
 }
-
 
 .partner-items:hover {
   opacity: 1;
@@ -453,22 +452,43 @@ li {
 .partner-items:active{
   opacity: 0.1;
 }
-.partner-items-link {
-
-}
-.partner-items-link::after {
+.partner-items:nth-child(1):after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 45%;
   margin-top: -30px;
   left: 250px;
   width: 2px;
   height: 52px;
-  background-color: black;
+  background-color: #eee;
   cursor: default;
-  opacity: initial;
 }
-.partner-items-link::after
+.partner-items:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  margin-top: -30px;
+  left: 250px;
+  width: 2px;
+  height: 52px;
+  background-color: #eee;
+  cursor: default;
+
+}
+.partner-items:nth-child(3):after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  margin-top: -30px;
+  left: 250px;
+  width: 2px;
+  height: 52px;
+  background-color: #eee;
+  cursor: default;
+
+}
+
+
 
 .contacts {
   width: 100%;
@@ -1015,7 +1035,7 @@ input[type="email"]:invalid {
   }
 }
 .radio-label{
-  padding: 2px 3px;
+  padding: 2px px;
   margin-bottom: 5px;
   display: flex;
   align-items: center;
