@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Open Sans", sans serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000;
@@ -253,7 +253,7 @@ li {
   width: 300px;
   margin: 0;
   margin-right: 100px;
-
+  padding-bottom: 30px;
 }
 .services-item:nth-child(3n) {
   margin-right: 0;
@@ -905,6 +905,7 @@ input[type="email"]:invalid {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: center;
 }
 
 .price-controls input {
