@@ -443,7 +443,6 @@ li {
   opacity: 0.2;
   cursor: pointer;
   position: relative;
-
 }
 
 .partner-items:hover {
@@ -452,7 +451,7 @@ li {
 .partner-items:active{
   opacity: 0.1;
 }
-.partner-items:nth-child(1):after {
+.partner-items:nth-child(1) +:after {
   content: "";
   position: absolute;
   top: 45%;
@@ -460,6 +459,7 @@ li {
   left: 250px;
   width: 2px;
   height: 52px;
+  opacity: 1;
   background-color: #eee;
   cursor: default;
 }
@@ -493,7 +493,8 @@ li {
 .contacts {
   width: 100%;
   position: relative;
-  margin-top: 100px;
+  margin-top: 40px;
+
 }
 .map {
   width: 100%;
@@ -504,7 +505,7 @@ li {
   position: absolute;
   top: -370px;
   background-color: #fff;
-  padding: 30px 50px;
+  padding: 20px 50px;
 }
 .adress .title {
   font-size: 18px;
@@ -522,7 +523,7 @@ li {
   width: 219px;
   height: 50px;
   background-color: #fb565a;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .feedback-button:hover {
   background-color: #e74246;
@@ -749,7 +750,7 @@ input[type="email"]:invalid {
   fill: black;
 }
 .icon-up {
-  fill: a6a6a6;
+  fill: #a6a6a6;
 }
 .product {
   margin-left: 40px;
@@ -757,6 +758,8 @@ input[type="email"]:invalid {
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 10px;
+  padding-left: 45px;
 
 }
 .product-item {
@@ -836,11 +839,15 @@ input[type="email"]:invalid {
   background-color: #d7373b;
   color: #fff;
 }
+
+
 .filter-field {
   border: none;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 .filter-title {
   text-transform: uppercase;
@@ -848,7 +855,10 @@ input[type="email"]:invalid {
   font-weight: bold;
   line-height: 18px;
   letter-spacing: 0.7px;
-  padding-bottom: 10px;
+
+}
+.price .filter-title {
+  padding-bottom: 50px;
 }
 .filter-btn {
   width: 260px;
@@ -940,14 +950,17 @@ input[type="email"]:invalid {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   cursor: pointer;
   padding: 0;
-  margin-left: 40px;
+  margin-top: -30px;
+  margin-left: 45px;
+
 }
 .pagination-item {
   display: flex;
   align-items: center;
-  padding: 16px 23px;
+  padding: 16px 21px;
   background-color: #eeeeee;
   margin-right: 10px;
   font-weight: 500;
@@ -982,7 +995,15 @@ input[type="email"]:invalid {
   border-color:  #eee;
   cursor: default;
 }
-
+.grid {
+  margin-top: 50px;
+}
+.features {
+  margin-bottom: 30px;
+}
+.features .filter-title {
+  padding-top: 30px;
+}
 
 .next  {
   text-transform: uppercase;
@@ -1035,8 +1056,8 @@ input[type="email"]:invalid {
   }
 }
 .radio-label{
-  padding: 2px px;
-  margin-bottom: 5px;
+  padding: 2px 0;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1059,12 +1080,16 @@ input[type="email"]:invalid {
 }
 
 .checkbox-label{
-  padding: 2px 0;
-  margin-bottom: 5px;
+
   display: flex;
   align-items: center;
+
+  padding: 2px 0;
+  margin-bottom: 5px;
+  margin-top: 13px;
+
   cursor: pointer;
-  margin-right: 5px;
+
 }
 
 .checkbox-label::before {
