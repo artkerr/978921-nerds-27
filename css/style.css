@@ -219,12 +219,12 @@ li {
   flex-wrap: wrap;
   position: relative;
   padding: 0;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 .services-list::after {
   content: "";
   position: absolute;
-  bottom: -80px;
+  bottom: -52px;
   width: 1160px;
   height: 2px;
   background-color: #eee;
@@ -243,7 +243,7 @@ li {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 .services-text {
   width: 245px;
@@ -288,7 +288,6 @@ li {
 
 .information {
   display: flex;
-  margin-top: 90px;
 }
 .information-main {
   width: 700px;
@@ -380,6 +379,7 @@ li {
   font-size: 30px;
 }
 .partner-list {
+  width: 1160px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -388,8 +388,11 @@ li {
   margin-top: 95px;
   margin-bottom: 120px;
   padding-left: 30px;
-  padding-right: 40px;
+  padding-right: 30px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
 }
+/*
 .partner-list::before{
   content: "";
   position: absolute;
@@ -398,7 +401,7 @@ li {
   height: 2px;
   background-color: #eee;
 }
-.partner-list::after {
+.partner-items::after {
   content: "";
   position: absolute;
   top: 128px;
@@ -406,6 +409,8 @@ li {
   height: 2px;
   background-color: #eee;
 }
+*/
+
 .partner-items {
   display: flex;
   align-items: center;
@@ -473,20 +478,7 @@ li {
 .feedback-button:active {
   background-color: #d7373b;
 }
-.modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -480px;
-  margin-top: -295px;
-  width: 960px;
-  height: 590px;
-  padding-left: 100px;
-  padding-top: 73px;
-  background-color: #fff;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-}
+
 .feedback {
   display: flex;
   flex-wrap: wrap;
@@ -924,9 +916,26 @@ input[type="email"]:invalid {
   width: 100%;
   height: 430px;
 }
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 590px;
+  padding-left: 100px;
+  padding-top: 73px;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  transform: translateY(-2000px);
+  transition-property: visibility, opacity, transform;
+  transition-duration: 0.5s;
+}
 .modal-show {
-  display: block;
-  animation: bounce 0.6s;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 .modal-error {
   animation: shake 0.6s;
