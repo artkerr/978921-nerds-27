@@ -1036,8 +1036,10 @@ input[type="email"]:invalid {
   }
 }
 .radio-label{
+  position: relative;
   padding: 2px 0;
-  margin-top: 15px;
+  padding-left: 35px;
+  margin-top: 12px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1045,6 +1047,8 @@ input[type="email"]:invalid {
 }
 
 .radio-label::before {
+  position: absolute;
+  left: 0;
   content: "";
   width: 25px;
   height: 25px;
@@ -1060,19 +1064,19 @@ input[type="email"]:invalid {
 }
 
 .checkbox-label{
-
+  position: relative;
   display: flex;
-  align-items: center;
-
   padding: 2px 0;
+  padding-left: 35px;
   margin-bottom: 5px;
-  margin-top: 13px;
-
+  margin-top: 12px;
   cursor: pointer;
 
 }
 
 .checkbox-label::before {
+  position: absolute;
+  left: 1px;
   content: "";
   width: 23px;
   height: 23px;
