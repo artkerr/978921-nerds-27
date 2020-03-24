@@ -410,7 +410,6 @@ li {
   font-size: 30px;
 }
 
-
 .partner-list {
   position: relative;
   display: flex;
@@ -418,7 +417,7 @@ li {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 95px;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
   padding-left: 30px;
   padding-right: 40px;
 }
