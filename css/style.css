@@ -514,29 +514,6 @@ input[type="email"]:invalid {
   height: 118px;
   padding-top: 10px;
 }
-.modal-btn  {
-  width: 260px;
-  height: 50px;
-  background-color: #fb565a;
-}
-.modal-btn:hover {
-  background-color: #e74246;
-}
-.modal-btn:active {
-  background-color: #d7373b;
-}
-.close-button {
-  content: "";
-  background: url("../img/closecross.svg") no-repeat;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 78px;
-  right: 100px;
-  opacity: 0.3;
-  border: none;
-  cursor: pointer;
-}
 .close-button:hover {
   opacity: 1;
 }
@@ -924,6 +901,29 @@ input[type="email"]:invalid {
 }
 .modal-error {
   animation: shake 0.2s;
+}
+.modal-btn  {
+  width: 260px;
+  height: 50px;
+  background-color: #fb565a;
+}
+.modal-btn:hover {
+  background-color: #e74246;
+}
+.modal-btn:active {
+  background-color: #d7373b;
+}
+.close-button {
+  content: "";
+  background: url("../img/closecross.svg") no-repeat;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 78px;
+  right: 100px;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
 }
 @keyframes bounce {
   0% {
