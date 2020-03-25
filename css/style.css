@@ -721,6 +721,7 @@ input[type="email"]:invalid {
   color: #000;
   margin: 0;
   padding-top: 30px;
+
 }
 .product-description {
   text-align: center;
@@ -769,6 +770,7 @@ input[type="email"]:invalid {
   width: 260px;
   height: 50px;
   color: #000;
+  background-color: #eee;
 }
 .filter-btn:active {
   color: rgba(0,0,0, 0.3);
@@ -910,7 +912,7 @@ input[type="email"]:invalid {
   padding-top: 73px;
   background-color: #fff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  transform: translateY(-2000px);
+  transform: translate(-50%, -2000px);
   transition-property: visibility, opacity, transform;
   transition-duration: 0.5s;
 }
@@ -939,7 +941,7 @@ input[type="email"]:invalid {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   10%,
   30%,
