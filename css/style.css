@@ -424,7 +424,7 @@ li {
 }
 .contacts {
   width: 100%;
-  position: relative8
+  position: relative;
 }
 .map {
   width: 100%;
@@ -904,6 +904,7 @@ input[type="email"]:invalid {
   visibility: hidden;
   opacity: 0;
   position: fixed;
+  z-index: 5;
   top: 50%;
   left: 50%;
   width: 960px;
@@ -922,7 +923,7 @@ input[type="email"]:invalid {
   transform: translate(-50%, -50%);
 }
 .modal-error {
-  animation: shake 0.6s;
+  animation: shake 0.2s;
 }
 @keyframes bounce {
   0% {
@@ -941,21 +942,19 @@ input[type="email"]:invalid {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
   10%,
-  30%,
+  30%{
+    transform: translate(-46%, -50%);
+  }
   50%,
   70%,
-  90% {
-    transform: translateX(-10px);
-  }
+  90%,
   20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
+  40%{
+  transform: translate(-54%, -50%);
+}
 }
 .radio-label{
   position: relative;
